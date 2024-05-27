@@ -1,0 +1,16 @@
+class Transport():
+    name = 'Nissan'
+    max_speed = 200
+    millage = 12
+    def _init_(self, name, max_speed, millage):
+        self.name = name
+        self.max_speed = max_speed
+        self.millage = millage
+
+class Bus(Transport):
+    def _init_(self, name, max_speed, millage, passengers):
+        super().__init__(name, max_speed, millage)
+        self.passengers = passengers
+
+    bus = ("Nissan", 200, 12, 10)
+    print(bus)
